@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.0rem;
+    line-height: 1.2;
+    margin: 0;
+
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.headerGlobal{
+    background-color: #B06910;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.headerGlobal a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 90px;
+}
+
+.logoNavContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegation ul li{
+    display: inline-block;
+}
+
+.navegation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s linear;
+    border-radius: 15px;
+}
+
+.navegation ul li a:hover{
+    background-color: #333;
+}
+
+.mainGlobal{
+    padding: 100px;
+}
+
+.listaProductos{
+    background-color: #C74C2B;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    
+}
+
+.container section{
+    background-color: #f2f2f2;
+    color: white;
+    border-radius: 15px;
+}
+
+.container section .box1,.box2,.box3,.box4,.box5{
+    font-size:15px;
+    border-radius: inherit;
+    background-color: #C74C2B;
+    width: 250px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botonFormulario {
+	box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background-color:#e08312;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+    margin:10px;
+    margin-left: 320px;
+}
+.botonFormulario:hover {
+	background-color:#eb675e;
+}
+.botonFormulario:active {
+	position:relative;
+	top:1px;
+}
+
+#buttonPrincipal {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:8px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:6px 9px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.buttonPrincipal:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.buttonPrincipal:active {
+	position:relative;
+	top:1px;
+}
+
+.inputFormulario {
+    padding: 5px;
+    font-size: 14px;
+    border-width: 3px;
+    border-color: #f99898;
+    background-color: #f2f2f2;
+    color: #000000;
+    border-style: groove;
+    border-radius: 9px;
+    box-shadow: 1px 2px 0px rgba(66,66,66,.0);
+    text-shadow: 0px 0px 1px rgba(66,66,66,.0);
+}
+.inputFormulario:focus {
+    outline:none;
+}
+
+.logoTarjeta{
+    width: 40px;
+}
+
+.titulo{
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.subtitulo{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorPadre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hijo{
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    padding: 0 2em;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px hsl(240, 25%, 50%);
+    border-top: 5px solid hsl(180, 62%, 55%);
+    align-content: center;
+}
+
+.hijo:hover {
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background:#fff;
+}
+
+.tituloTarjeta,.textoTarjeta{
+    text-align: left;
+}
+
+.textLight{
+    color: hsl(229, 6%, 66%);
+}
+
+.textoSimple{
+    font-weight: 200;
+}
+
+.textoNegrita{
+    font-weight: 600;
+}
+
+/* HEADER */
+
+.titleProductos h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    text-transform: uppercase;
+}
+
+/* CONTAINER */
+
+.contenedorProductos {
+    width: 95%;
+    max-width: 1500px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 100px;
+}
+
+.imagenes{
+   width: 400px;
+   height: 300px;
+}
+
+.contenedorProductos>.header, .contenedorProductos>.contentProductos, .contenedorProductos>.sidebar, .contenedorProductos>.footer, .contenedorProductos>div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.contenedorProductos>.header, .contenedorProductos>.footer {
+    grid-column: 1/-1;
+    background-color: #1e272e;
+    color: #ffffff;
+}
+
+.contenedorProductos>.contentProductos {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.quienesSomos{
+    padding: 100px;
+}
+
+.contentProductos>.article {
+    background: #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9
+}
+
+.contentProductos .article h1,
+.contentProductos .article p {
+    padding: 10px;
+}
+
+.contenedorProductos>.sidebar {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: #485460;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorProductos .sidebar img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*Aplicacion de Flex en grid para centrar los contenidos aside*/
+.contenedorProductos>.related-post {
+    background: #2d3436;
+    color: #ffffff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.contenedorProductos>.related-post:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .contentProductos {
+        text-align: center;
+    }
+    .contenedorProductos .content {
+        grid-column: 1 / -1;
+    }
+    .contenedorProductos .sidebar {
+        grid-column: 1 / 6;
+    }
+
+    .contenedorProductos .related-post {
+        grid-column: 1/-1;
+    }
+}
+
+.footerGlobal{
+    background: #f2f2f2;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.footerGlobal a{
+    color: black;
+}
+
+.footerGlobal ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footerGlobal ul li{
+    display: inline-block;
+}
+
+.footerGlobal ul li a{
+    display: block;
+    padding: 0.1rem 1em;
+}
+
+.footerGlobal div img{
+    width: 35px;
+}
+
+.containerFooter{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.containerFooter div{
+    margin-left: 100px;
+}
+
+.footerIcons{
+    margin-right: 200px;
+}
+
+.footerLista li{
+    margin-left: 100px;
+}
