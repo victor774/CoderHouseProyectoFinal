@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <meta name="descripcion" content="Comprá Online en Marketshop. Las mejores ofertas en tecnología, electrodomésticos, artículos para el hogar y otras categorias mas">
+    <meta name="keywords"="articulo,venta,oferta,tecnología,hogar,productos,online,MarketShop">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>MarketShop</title>
@@ -13,185 +17,174 @@
 
 <body>
 
-    <header class="headerGlobal">
-        <div class="container logoNavContainer">
-            <div class="logo">
-                <a href="index.html"><img src="assets/images/logo-proyecto.svg" alt="logo company"></a>
-            </div>
-            <nav class="navegation">
-                <ul>
-                    <li> <a href="index.html">INICIO</a> </li>
-                    <li> <a href="paginas/productos.html">PRODUCTOS</a> </li>
-                    <li> <a href="paginas/promociones.html">PROMOCIONES</a> </li>
-                    <li> <a href="paginas/quienes-somos.html">QUIENES SOMOS</a> </li>
+    <section class="gridPadreIndex">
+
+        <header class="hijo1">
+            <nav class="menu">
+                <label>
+                    <a class="logo" href="#"><img src="assest/00-index-logo/logo-proyecto.svg" alt="logo" class="logo"></a>
+                </label>
+                <ul class="menu_items">
+                    <li ><a class="active1" href="#">INICIO</a></li>
+                    <li class="active2"><a href="paginas/productos.html">PRODUCTOS</a></li>
+                    <li class="active3"><a href="paginas/promociones.html">PROMOCIONES</a></li>
+                    <li class="active4"><a href="#">QUIENES SOMOS</a></li>
                 </ul>
+                <label>
+                    <a href="paginas/login.html"><img src="assest/00-index-logo/logo-user.svg" alt="logo" class="logoLogin"></a>
+                </label> 
             </nav>
-            <div>
-                <a class="logoUser" href="paginas/login.html"><img src="assets/images/logo-user.svg" alt="logo"></a>
+        </header>
+
+        <article class="hijo2">
+            <div id="carouselExampleIndicators" class="carousel slide carouserIndex" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active banerImagen">
+                  <a href="#"><img src="assest/00-index-banner/banner1-index.JPG" class="d-block w-100" alt="logobanner"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"><img src="assest/00-index-banner/banner2-index.JPG" class="d-block w-100" alt="logobanner"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"><img src="assest/00-index-banner/banner3-index.JPG" class="d-block w-100" alt="logobanner"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"><img src="assest/00-index-banner/banner4-index.JPG" class="d-block w-100" alt="logobanner"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"><img src="assest/00-index-banner/banner5-index.JPG" class="d-block w-100" alt="logobanner"></a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-        </div>
-    </header>
-  <!--hijo1,hijo2,hijo3,hijo4 equivalen a grid, contenedorPadre y containerCard son flexbox-->
-    <main class="mainGlobal">
-        <section class="GridPadreIndex">
-            <div class="hijo1">
-                <div id="carouselExampleIndicators" class="carousel slide carouserIndex" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 5"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active banerImagen">
-                        <img src="assets/images/banner1-index.JPG" class="d-block w-100" alt="logobanner">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/banner2-index.JPG" class="d-block w-100" alt="logobanner">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/banner3-index.JPG" class="d-block w-100" alt="logobanner">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/banner4-index.JPG" class="d-block w-100" alt="logobanner">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/banner5-index.JPG" class="d-block w-100" alt="logobanner">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+          </article>
+
+          <article class="hijo3"><h1>Categorías</h1></article>
+
+          <article class="hijo4 contenedorHijo4">   
+            <div class="nietoHijo4">
+                <h2 class="tituloTarjeta">Electrodomesticos</h2>
+                <a class="tex" href="paginas/productos.html"><p class="textoTarjeta textLight">Lineas de articulos disponibles</p></a>
+                <img src="assest/00-index-categoria/electrodomesticos.svg" class="logoTarjeta">
+                
             </div>
-            <div class="hijo2">
-                <h1>
-                    <span class="titulo textoSimple">Nuestra garantia es su confianza</span>
-                </h1>
-                <h2>
-                     <span class="titulo textoNegrita">Catalogo de Productos</span>
-                </h2>
+            <div class="nietoHijo4">
+                <h2 class="tituloTarjeta">Hogar</h2>
+                <a class="tex" href="paginas/productos-hogar.html"><p class="textoTarjeta textLight">Haga de su casa un hogar</p></a>
+                <img src="assest/00-index-categoria/hogar.svg" class="logoTarjeta">
             </div>
-            <div class="hijo3">
-                <section class="contenedorPadre">
-                    <div class="hijo">
-                        <h2 class="tituloTarjeta">Electrodomesticos</h2>
-                        <p class="textoTarjeta textLight">Lorem ipsum dolor</p>
-                        <img src="assets/images/electrodomesticos.svg" class="logoTarjeta">
-                    </div>
-                    <div class="hijo">
-                        <h2 class="tituloTarjeta">Hogar</h2>
-                        <p class="textoTarjeta textLight">Lorem ipsum dolor</p>
-                        <img src="assets/images/hogar.svg" class="logoTarjeta">
-                    </div>
-                    <div class="hijo">
-                        <h2 class="tituloTarjeta">Ropa y Moda</h2>
-                        <p class="textoTarjeta textLight">Lorem ipsum dolor</p>
-                        <img src="assets/images/ropa-y-moda.svg" class="logoTarjeta">
-                    </div>
-                    <div class="hijo">
-                        <h2 class="tituloTarjeta">Salud y Belleza</h2>
-                        <p class="textoTarjeta textLight">Lorem ipsum dolor</p>
-                        <img src="assets/images/salud-y-belleza.svg" class="logoTarjeta">
-                    </div>
-                    <div class="hijo">
-                        <h2 class="tituloTarjeta">Tecnologia</h2>
-                        <p class="textoTarjeta textLight">Lorem ipsum dolor</p>
-                        <img src="assets/images/tecnologia.svg" class="logoTarjeta">
-                    </div>
-                    <div class="hijo">
-                        <h2 class="tituloTarjeta">Deportes</h2>
-                        <p class="textoTarjeta textLight">Lorem ipsum dolor</p>
-                        <img src="assets/images/deporte.svg" class="logoTarjeta">
-                    </div>
-                </section>
+            <div class="nietoHijo4">
+                <h2 class="tituloTarjeta">Ropa y Moda</h2>
+                <a class="tex" href="paginas/productos-moda.html"><p class="textoTarjeta textLight">Productos para destacarse</p></a>
+                <img src="assest/00-index-categoria/ropa-y-moda.svg" class="logoTarjeta">
             </div>
-            <div class="hijo4">
-                <h3 class="titleTarjetas">PRODUCTOS RECOMENDADOS</h3>
-                <div class="containerCard">
-                    <div class="card">
-                        <img src="assets/images/01" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Cama Elastica de 366 cm</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/02" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Mesa De Ping Pong<br>Plegable C/Ruedas</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/03" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Casa De Juegos Plegable <br>Wonderfold</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/04" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Hidrolavadora 145Bar<br>2000W</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/05" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Sierra Circular GKS 150<br>1500W</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/06" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Soldadora Arc 140i<br>Inverter</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/07.jpg" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Taladro/Atornillador<br>Smart Max 12V</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/08" alt="logo">
-                        <h3>$11,111</h3>
-                        <p>Piso De Goma Eva<br>Rayuela 30x30cm</p>
-                        <a href="paginas/login.html">Comprar</a>
-                    </div>
+            <div class="nietoHijo4">
+                <h2 class="tituloTarjeta">Salud y Belleza</h2>
+                <a class="tex" href="paginas/productos-belleza.html"><p class="textoTarjeta textLight">Tenemos lo mejor para tu cuidado</p></a>
+                <img src="assest/00-index-categoria/salud-y-belleza.svg" class="logoTarjeta">
+            </div>
+            <div class="nietoHijo4">
+                <h2 class="tituloTarjeta">Tecnologia</h2>
+                <a class="tex" href="paginas/productos-tecnologia.html"><p class="textoTarjeta textLight">Destacarse en lo ultimo en tecnologia</p></a>
+                <img src="assest/00-index-categoria/tecnologia.svg" class="logoTarjeta">
+            </div>
+            <div class="nietoHijo4">
+                <h2 class="tituloTarjeta">Deportes</h2>
+                <a class="tex" href="paginas/productos-deportes.html"><p class="textoTarjeta textLight">Variedades que necesita para hacer deportes</p></a>
+                <img src="assest/00-index-categoria/deporte.svg" class="logoTarjeta">
+            </div>
+        </article>
+
+        <article class="hijo5">
+            <h3 class="titleTarjetas">PRODUCTOS RECOMENDADOS</h3>
+            <div class="containerCard">
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/01" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Cama Elastica de 366 cm</p>
+                  <a href="paginas/login.html"target="_blank">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/02" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Mesa De Ping Pong<br>Plegable C/Ruedas</p>
+                  <a href="paginas/login.html"target="_blank">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/03" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Casa De Juegos Plegable <br>Wonderfold</p>
+                  <a href="paginas/login.html"target="_blank">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/04" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Hidrolavadora 145Bar<br>2000W</p>
+                  <a href="paginas/login.html"target="_blank">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/05" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Sierra Circular GKS 150<br>1500W</p>
+                  <a href="paginas/login.html "target="_blank">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/06" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Soldadora Arc 140i<br>Inverter</p>
+                  <a href="paginas/login.html"target="_blank">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/07.jpg" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Taladro/Atornillador<br>Smart Max 12V</p>
+                  <a href="paginas/login.html"target="_blank">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="assest/00-productos-recomendados/08" alt="logo">
+                  <h3>$11,111</h3>
+                  <p>Piso De Goma Eva<br>Rayuela 30x30cm</p>
+                  <a href="paginas/login.html"target="_blank">Comprar</a>
+              </div>
+          </div>
+          </article>
+
+          <footer class="footerGlobal hijo6">
+            <div class="containerFooter">
+                <div>
+                    <ul>
+                        <li> <a href="terminos-de-servicios">Terminos de servicio</a> </li>
+                        <li> <a href="policias-de-privacidad">Politicas de privacidad</a> </li>
+                        <li> <a href="soporte">Soporte</a> </li>
+                        <li> <a href="ayuda">Ayuda</a> </li>
+                    </ul>
+                </div>
+                <div class="footerIcons">
+                    <a href="https://facebook.com" target="_blank"> <img src="assest/footer-global/facebook.svg"
+                            alt="logo facebook"></a>
+                    <a href="https://instagram.com" target="_blank"> <img src="assest/footer-global/instagram.svg"
+                            alt="logo instagram"> </a>
                 </div>
             </div>
-            </div>
-            
-        </section>
-
-
-    </main>
-
-    <footer class="footerGlobal">
-        <div class="containerFooter">
-            <div>
-                <ul>
-                    <li> <a href="terminos-de-servicios">Terminos de servicio</a> </li>
-                    <li> <a href="policias-de-privacidad">Politicas de privacidad</a> </li>
-                    <li> <a href="soporte">Soporte</a> </li>
-                    <li> <a href="ayuda">Ayuda</a> </li>
-                </ul>
-            </div>
-            <div class="footerIcons">
-                <a href="https://facebook.com" target="_blank"> <img src="assets/images/facebook.svg"
-                        alt="logo facebook"></a>
-                <a href="https://instagram.com" target="_blank"> <img src="assets/images/instagram.svg"
-                        alt="logo instagram"> </a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+        
+    </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
